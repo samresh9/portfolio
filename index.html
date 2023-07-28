@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samresh Thapa</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -27,7 +30,7 @@
         height: 100%;
         background-color: #e5e5f7;
         opacity: 0.8;
-  
+
         opacity: 0.2;
         z-index: -1;
       }
@@ -106,6 +109,31 @@
       .social-links {
         margin-top: 20px;
       }
+      .tech-container {
+        display: flex;
+        justify-content: center; /* Optional: Center the items horizontally */
+      }
+
+      .tech-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribute items equally in each row */
+        max-width: 400px; /* Adjust the maximum width to control the number of items per row */
+      }
+
+      .techStack {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        background-color: #333; /* Add your desired background color here */
+        transition: background-color 0.2s;
+      }
 
       .social-links a {
         display: inline-block;
@@ -131,7 +159,9 @@
       .linkedin {
         background-color: #0077b5;
       }
-
+      .techStack {
+        background-color: #007bff;
+      }
       .social-links a:hover {
         background-color: #777;
       }
@@ -225,7 +255,33 @@
         <img src="public/photo.jpg" alt="Your Name" />
         <h1>Samresh Thapa</h1>
         <p>Javascript Developer</p>
+
         <p>Bsc.CSIT</p>
+        <div class="tech-container">
+          <div class="tech-links">
+            <a class="techStack" title="Javascript"
+              ><i class="fa-brands fa-js"></i
+            ></a>
+            <a class="techStack" title="Node Js"
+              ><i class="fa-brands fa-node"></i
+            ></a>
+            <a class="techStack" title="React"
+              ><i class="fa-brands fa-react"></i
+            ></a>
+            <a class="techStack" title="MongoDb and SQl"
+              ><i class="fa-brands fa-envira"></i
+            ></a>
+            <a class="techStack" title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a class="techStack" title="HTML"
+              ><i class="fa-brands fa-html5"></i
+            ></a>
+            <a class="techStack" title="CSS"
+              ><i class="fa-brands fa-css3-alt"></i
+            ></a>
+          </div>
+        </div>
         <div class="projects">
           <h2>Projects</h2>
           <ul class="project-list">

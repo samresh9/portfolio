@@ -8,10 +8,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section>
+    <div class="loader" id="loader"></div>
+    <section id="content">
       <div id="profile-card">
         <img src="public/black.png" alt="Your Name" />
         <h1>Samresh Thapa</h1>
@@ -92,5 +93,19 @@
       <div class="air air3"></div>
       <div class="air air4"></div>
     </section>
+    <script>
+      //JavaScript to control the display of the loader and content
+      document.addEventListener("DOMContentLoaded", function () {
+        // Show the loader initially
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+
+        // Simulate loading time (You can remove this for actual asynchronous loading)
+        setTimeout(function () {
+          loader.style.display = "none"; // Hide the loader
+          content.style.display = "block"; // Show the content
+        }, 2000); // Replace this with actual loading logic
+      });
+    </script>
   </body>
 </html>
